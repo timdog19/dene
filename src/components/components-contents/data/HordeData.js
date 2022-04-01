@@ -3,7 +3,7 @@ import LegendaryImage from '../../../assets/card4.png'
 import ZermioneImage from '../../../assets/card1.jpeg'
 import UnknownImage from '../../../assets/unknown.png'
 
-export const SneakPunksData = [
+export const HordeData = [
     {
         title: 'LEGENDARY',
         count: 670,
