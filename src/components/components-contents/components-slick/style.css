@@ -1,0 +1,7 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+*:focus {
+    outline: 0;
+    outline: none;
+}
