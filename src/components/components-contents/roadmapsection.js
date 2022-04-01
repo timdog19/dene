@@ -16,7 +16,7 @@ class RoadMapSection extends React.Component {
             <div className="w-full flex flex-col place-items-center" id="roadmapSection">
                 <div className="w-84.5% pb-36 flex flex-col place-items-center space-y-36">
                     <div className="w-max">
-                        <h1 className="text-white text-5xl font-extrabold italic">THE ROAD MAP</h1>
+                        <h1 className="text-white text-5xl font-extrabold italic">THE ROADMAP</h1>
                         <div className="w-full h-1.5" style={{
                             backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(162 105 247) 50%, rgba(255, 255, 255, 0) 100%)'
                         }}></div>
