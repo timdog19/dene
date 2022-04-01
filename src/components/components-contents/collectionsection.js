@@ -6,7 +6,7 @@ class CollectionSection extends React.Component {
     render() {
         return (
             <div className="w-full flex flex-col place-items-center pt-10 pb-24" id="collectionSection">
-                <div className="w-84.5%">
+                <div className="w-100%">
                     <div className="w-full flex flex-col place-items-center space-y-6 mb-10">
                         <h1 className="text-white text-7xl font-black italic">COLLECTIBLE SNEAKS</h1>
                         <p className="text-white text-xl max-w-4xl text-center">
