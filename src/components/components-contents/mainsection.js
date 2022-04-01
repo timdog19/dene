@@ -1,6 +1,7 @@
 import React from 'react'
 import BackgroundImage from '../../assets/targon-celestial-le-voyageur-legends-of-runeterra-league-of-legends-lol-fond-d-ecran-2560x1600_7.jpeg'
 
+    render() {
         return (
             <div className="w-full h-795px-rem bg-cover flex justify-center" style={{ backgroundImage: `url(${BackgroundImage})`}}>
                 <div className="w-4/5 h-full flex flex-col justify-end space-y-16">
