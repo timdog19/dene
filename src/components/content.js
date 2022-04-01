@@ -17,7 +17,7 @@ class Content extends React.Component {
                 <div
                     style={{
                         backgroundColor: 'transparent',
-                        backgroundImage: 'linear-gradient(rgb(57 36 133) 0%, rgb(85 51 137) 100%)'
+                        backgroundImage: 'linear-gradient(rgb(57 36 133) 100%, rgb(85 51 137) 100%)'
                 }}>
                     <CollectionSection />
                     <RoadMapSection />
