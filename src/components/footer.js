@@ -10,7 +10,7 @@ class Footer extends React.Component {
                     <div className="w-20 h-20" key="logo-symbol">
                         <img className="object-fill w-full h-full" src={LogoSymbol} alt="logo"></img>
                     </div>
-                    <h1 className="text-white text-wxl">HYPE ERA NFT PROPERTY.</h1>
+                    <h1 className="text-white text-wxl"></h1>
                 </div>
             </div>
         )
