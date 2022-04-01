@@ -14,7 +14,7 @@ class Header extends React.Component {
                     <li className="float-left cursor-pointer"><a href="#storySection">The story</a></li>
                     <li className="float-left cursor-pointer"><a href="#featureSection">Features</a></li>
                     <li className="float-left cursor-pointer"><a href="#collectionSection">Collection</a></li>
-                    <li className="float-left cursor-pointer"><a href="#roadmapSection">Road map</a></li>
+                    <li className="float-left cursor-pointer"><a href="#roadmapSection">Roadmap</a></li>
                     <li className="float-left cursor-pointer"><a href="#faqSection">FAQ</a></li>
                 </ul>
                 <div className="space-x-8">
