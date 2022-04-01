@@ -11,7 +11,7 @@ import BackgroundImage from '../../assets/targon-celestial-le-voyageur-legends-o
                             fontStyle: 'italic',
                             fontHeadings: 'Poppins',
                         }}>
-                        THE PLANET CLOUT HAS INVADED THE METAVERSE, IT'S THE ERA OF HYPE.
+                        THE PLANET CLOUT HAS INVADED THE P2E, IT'S THE ERA OF HYPE.
                     </h1>
                     <div className="flex justify-center space-x-6 h-36">
                         {this.state.counterData.map((item, i) => {
