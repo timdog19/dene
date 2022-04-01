@@ -8,7 +8,7 @@ class MainSection extends React.Component {
 
         this.calculateRemainTime = this.calculateRemainTime.bind(this);
         this.state = {
-            publishDate: new Date(2022, 1, 30),
+            publishDate: new Date(2023, 1, 30),
             counterData: [
                 {title: 'Days', remains: 0},
                 {title: 'Hours', remains: 0},
