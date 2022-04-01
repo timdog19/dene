@@ -1,6 +1,50 @@
 import React from 'react'
 import BackgroundImage from '../../assets/targon-celestial-le-voyageur-legends-of-runeterra-league-of-legends-lol-fond-d-ecran-2560x1600_7.jpeg'
 
+class MainSection extends React.Component {
+
+    constructor() {
+        super();
+
+        this.calculateRemainTime = this.calculateRemainTime.bind(this);
+        this.state = {
+            publishDate: new Date(2022, 1, 30),
+            counterData: [
+                {title: 'Days', remains: 0},
+                {title: 'Hours', remains: 0},
+                {title: 'Minutes', remains: 0},
+                {title: 'Seconds', remains: 0}
+            ]
+        };
+    }
+
+    calculateRemainTime() {
+        let curDate = new Date()
+        let dif = this.state.publishDate - curDate
+        let fact1, fact2, fact3
+        
+        fact1 = 24 * 3600 * 1000
+        fact2 = 3600 * 1000
+        fact3 = 60 * 1000
+        
+        this.setState({
+            counterData: [
+                {title: 'Days', remains: Math.floor(dif / fact1)},
+                {title: 'Hours', remains: Math.floor((dif % fact1) / fact2)},
+                {title: 'Minutes', remains: Math.floor(((dif % fact1) % fact2) / fact3)},
+                {title: 'Seconds', remains: Math.floor((((dif % fact1) % fact2) % fact3) / 1000)},
+            ]
+        })
+    }
+
+    componentDidMount() {
+        this.interval = setInterval(() => this.calculateRemainTime(), 1000)
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.interval)
+    }
+
     render() {
         return (
             <div className="w-full h-795px-rem bg-cover flex justify-center" style={{ backgroundImage: `url(${BackgroundImage})`}}>
@@ -12,7 +56,7 @@ import BackgroundImage from '../../assets/targon-celestial-le-voyageur-legends-o
                             fontStyle: 'italic',
                             fontHeadings: 'Poppins',
                         }}>
-                        THE PLANET CLOUT HAS INVADED THE P2E, IT'S THE ERA OF HYPE.
+                        THE PLANET CLOUT HAS INVADED THE METAVERSE, IT'S THE ERA OF HYPE.
                     </h1>
                     <div className="flex justify-center space-x-6 h-36">
                         {this.state.counterData.map((item, i) => {
